@@ -3,7 +3,8 @@
   flex-direction: column;
   justify-content: flex-start;
 
-  width: 35rem;
+  width: 100%;
+  min-width: 25rem;
   height: 35rem;
 }
 .img_main-card{

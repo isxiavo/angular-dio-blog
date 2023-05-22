@@ -1,11 +1,13 @@
-<div class="container_main-card">
-  <div class="img_main-card">
-    <img 
-      src={{thumb}}
-      />
+<a [routerLink]="['content', id]">
+  <div class="container_main-card">
+    <div class="img_main-card">
+      <img 
+        src={{contentCover}}
+        />
+    </div>
+    <div class="title_main-card">
+      <h1>{{contentTitle}}</h1>
+    </div>
+    <div class="description_main-card">{{contentDescription}}</div>
   </div>
-  <div class="title_main-card">
-    <h1>{{cardTitle}}</h1>
-  </div>
-  <div class="description_main-card">{{cardDescription}}</div>
-</div>
+</a>
