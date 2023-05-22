@@ -1,0 +1,14 @@
+.container_menu-bar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.container_menu-bar > ul{
+  display: flex;
+  flex-direction: row;
+}
+
+.container_menu-bar > ul > li{
+  margin-right: 2rem;
+}

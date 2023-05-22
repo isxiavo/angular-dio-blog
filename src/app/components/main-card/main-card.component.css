@@ -1,0 +1,23 @@
+.container_main-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  width: 35rem;
+  height: 35rem;
+}
+.img_main-card{
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.img_main-card > img{
+  width: 100%;
+}
+
+.title_main-card {
+  margin-bottom: .5rem;
+}
+
+.description_main-card{
+  color: rgb(148, 148, 148);
+}

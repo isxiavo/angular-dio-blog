@@ -1,0 +1,13 @@
+.container_menu-title{
+  font-family: 'Segoe UI';
+  font-size: 5.5rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.container_menu-title > h1{
+  margin: 0;
+}
+.container_menu-title > hr {
+  margin: 0;
+}
