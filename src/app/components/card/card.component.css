@@ -1,14 +1,17 @@
 .container_card{
   display: flex;
-  flex-direction: row;
   align-items: center;
-  width: 100%;
 }
+
+.card-title{
+  text-align:justify;
+}
+
 .card-img{
   display: flex;
   margin-right: 1rem;
-  width: 15rem;
-  overflow: hidden;
+  min-width: 15rem;
+  max-width: 15rem;
 }
 .card-img > img{
   width: 100%;
