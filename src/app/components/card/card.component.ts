@@ -1,4 +1,4 @@
-import { Component, Input, AfterViewInit } from '@angular/core';
+import { Component, Input, AfterContentChecked } from '@angular/core';
 import { dataFake } from 'src/app/data/dataFake';
 
 @Component({
@@ -6,7 +6,7 @@ import { dataFake } from 'src/app/data/dataFake';
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.css']
 })
-export class CardComponent implements AfterViewInit {
+export class CardComponent implements AfterContentChecked {
   contentCover:string="";
   contentTitle:string="";
   contentDescription:string="";
@@ -14,7 +14,7 @@ export class CardComponent implements AfterViewInit {
 
   constructor(){}
 
-  ngAfterViewInit(): void {
+  ngAfterContentChecked(): void {
     this.setValueToComponents(this.id)
   }
 
@@ -23,6 +23,5 @@ export class CardComponent implements AfterViewInit {
     this.contentTitle = result.title;
     this.contentDescription = result.description;
     this.contentCover = result.photo;  
-    console.log(this.id)
   }
 }
